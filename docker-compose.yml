@@ -1,0 +1,26 @@
+# Note: For production. For development, use `docker-compose.yml`
+version: "3.0"
+services:
+  theta:
+    image: fjedi/theta-guardian-node
+    build:
+      context: .
+    container_name: "theta"
+    environment:
+      - NODE_PASSWORD
+    network_mode: bridge
+    volumes:
+      - theta_guardian_node:/srv/theta_mainnet/guardian_mainnet
+    expose:
+      - 30001
+    ports:
+      - 30001:30001
+    restart: unless-stopped
+
+volumes:
+  theta_guardian_node:
+    # driver: local
+    # driver_opts:
+    #   type: none
+    #   device: /srv/theta_mainnet/guardian_mainnet
+    #   o: bind
