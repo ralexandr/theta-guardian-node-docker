@@ -1,5 +1,5 @@
 # @fjedi/theta-guardian-node-docker
-*Simple Docker container to run THETA Guardian node as simple as `docker run -d --name theta -e NODE_PASSWORD=some-very-secret-password --restart unless-stopped --network bridge fjedi/theta-guardian-node` :)*
+*Docker container to run THETA Guardian node as simple as `docker run -d --name theta -e NODE_PASSWORD=some-very-secret-password --restart unless-stopped --network bridge fjedi/theta-guardian-node` :)*
 
 ![build](https://img.shields.io/docker/cloud/build/fjedi/theta-guardian-node.svg)
 ![build](https://img.shields.io/docker/pulls/fjedi/theta-guardian-node.svg)
